@@ -1,0 +1,37 @@
+/
+/DGS Menus
+/-------------------
+
+MENU "&AT1A"
+ITEM "&Import Data",AT1A_Data_GPS_Import.py
+SUBMENU "Corrections by Steps"
+Menu "&AT1A/Corrections by Steps"
+ITEM "&Absolute Gravity",Calculate_processed_gravity2.py
+ITEM "&Eotvos correction",Calculate_Eotvos.py
+SUBMENU "Time Synchronization"
+Menu "&AT1A/Corrections by Steps/Time Synchronization"
+ITEM "&Time synchronize all meter channels",Fine_time_synchronization.py
+ITEM "&Apply single channel time synchronization",Singlechannel_timesync.py
+ITEM "&Check timeshift",Check_time_shift.py
+Menu "&AT1A/Corrections by Steps"
+ITEM "&Tide Correction",tidegravity.py
+ITEM "&Latitude Correction",Latitude_correction.py
+ITEM "&Atmospheric correction",atm_corr.py
+ITEM "&Free air correction",Freeair_correction.py
+ITEM "&Free air anomaly",faa.py
+Menu "&AT1A"
+ITEM "&One step correction to FAA",batchcorr2.py
+SUBMENU "GPS"
+Menu "&AT1A/GPS"
+ITEM "&GPS velocity",gps_velocities.py
+ITEM "&GPS acceleration",gps_acceleration.py
+ITEM "&Course and Course Velocity",gps_course.py
+ITEM "&Rotate accelerations from E-N to C-L",Rotate_acc.py
+Menu "&AT1A"
+ITEM "&Level correction",levelcomp.py
+SUBMENU "Filter"
+Menu "&AT1A/Filter"
+ITEM "&Gaussian Filter",GSfilter.py
+ITEM "&Blackman Filter",BMfilter.py
+
+
